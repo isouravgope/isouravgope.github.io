@@ -1,4 +1,5 @@
 ## StartOf numeric restriction code.   ---->
+
 ```
 
 <script type="text/javascript">
@@ -12,10 +13,12 @@ function findrange(cellid)
 
 
 ```
+
 ** EndOf numeric restriction code.**
 
 
 ## StartOf shuffle code 
+
 ```
 
 Begin Unverified Perl
@@ -32,10 +35,12 @@ End Unverified
 
 
 ```
+
 ** EndOf shuffle Code. **
 
 
 ## First table corner with span
+
 ```
 
 <script>
@@ -51,10 +56,12 @@ End Unverified
 
 
 ```
+
 ** EndOf table corner with span Code. **
 
 
 ## Hiding and showing Question text 
+
 ```
 <script>
 	$( window ).on("load", function() {
@@ -77,9 +84,11 @@ End Unverified
 
 
 ```
+
 ** EndOf Hiding and showing Question text  Code. **
  
 ## Other Validation( ** normal ** ) on grid type 
+
 ```
 //removing all the error highlightings
 $(".error_highlight").removeClass("error_highlight");
@@ -111,9 +120,11 @@ else if($("#[% QuestionName() %]_r14_1_graphical").hasClass("radioboxselected") 
 
 
 ```
+
 ** EndOf Other Validation(normal) on grid type Code. **
 
 ##Auto fill in constant sum(Column wise)
+
 ```
 //validation for other specify for both the cases
 $(".error_highlight").removeClass("error_highlight");
@@ -155,6 +166,7 @@ else
 
 
 ```
+
 **EndOf Row Wise auto fill.
 
 ##StartOf Column wise auto fill
@@ -187,6 +199,7 @@ var ar=[% ListValuesArray(CS4RowList) %];
 	
 	
 	```
+	
 	**End of Column wise autofill**
 	
 	## Auto Populate COlumn wise
@@ -241,6 +254,7 @@ if(brw.indexOf("IE")==-1)
 	
 	
 	```
+	
 	**End of Auto populate Column wise**
 	
 	
@@ -248,6 +262,7 @@ if(brw.indexOf("IE")==-1)
 	
 	
 	## Auto Populate Row wise code
+	
 	```
 	<script type="text/javascript">
 /*$("#[% QuestionName() %]_r1_c1").val(sum2(1));
@@ -301,7 +316,7 @@ if(brw.indexOf("IE")==-1)
 </script>  
 
 ```
-**EndOf Auto populate Row wise code**
+** EndOf Auto populate Row wise code**
 
 ## StartOf Hiding label based on multiple vs single row
 ```
@@ -344,7 +359,7 @@ if (countGreaterThanZero === 1) {
 
 
 ```
-**EndOf Hiding label based on multiple vs single row**
+** EndOf Hiding label based on multiple vs single row**
 
 
 ## StartOf Dynamic Radio using loop
@@ -400,7 +415,7 @@ function SSI_CustomGraphicalRadiobox(GraphicalRadioboxObj, InputObj)
 
 
 ```
-**EndOf Dynamic Radio Using loop**
+** EndOf Dynamic Radio Using loop**
 
 ## Piping Of Values from other Question
 ```
@@ -439,9 +454,9 @@ $(".grid_c1").addClass("cgrey"); //greying out for the column which is piped fro
 
 
 ```
-**EndOf Piping Of Values from other Question**
+** EndOf Piping Of Values from other Question**
 
-##StartOf OpenEnd with checkbox greyOut
+## StartOf OpenEnd with checkbox greyOut
 ```
 
 
@@ -466,7 +481,7 @@ if(SSI_GetValue("[% QuestionName() %]_r2_c1")==0)
 
 
 ```
-**EndOf OpenEnd with checkbox greyOut**
+** EndOf OpenEnd with checkbox greyOut**
 
 ## StartOF searching for a word in html
 
@@ -489,9 +504,10 @@ boldTextContainingMS();
 
 
 ```
-**EndOf searching for a word in html**
+** EndOf searching for a word in html**
 
-##StartOf Radio Button pipe in
+## StartOf Radio Button pipe in
+
 ```
 <script type="text/javascript">
 [% Begin Unverified Perl
@@ -527,9 +543,11 @@ $(".grid_c1").addClass("cgrey");
 
 
 ```
-**EndOf Radio Button Pipe In**
 
-##StartOf Block Header insert
+** EndOf Radio Button Pipe In**
+
+## StartOf Block Header insert
+
 ```
 
 
@@ -542,10 +560,12 @@ var trParent = tdParent.parent("tr");
 	  
 	  
 ```
-**EndOf Block Header insert**
+
+** EndOf Block Header insert**
 
 
-##StartOf Okay PopUp
+## StartOf Okay PopUp
+
 ```
 
 var ar = [% ListValuesArray(S7BlockConst) %];
@@ -600,29 +620,35 @@ if (count == 9 && flag) {
 
 
 ```
-**EndOf Okay PopUp**
+
+** EndOf Okay PopUp**
 
 ## StartOf First td class search and add class
+
 
 ```
        $('.inner_table tbody tr td:first').addClass('firsttdclass'); 
 		
 		
 ```
-**EndOf First td class search and add class **
+
+** EndOf First td class search and add class **
 
 
 ## StartOf Product profile code
 
 ```
+
 Please <a href="[%GraphicsPath()%]avycaz.html" target="_blank"><b>click here</b></a> if you'd like to review the Avycaz profile again. </p>
 
 
 ```
-***EndOf Product profile code**
+
+*** EndOf Product profile code**
 
 
-##StartOf Other specify for grid with multiple checkbox 
+## StartOf Other specify for grid with multiple checkbox 
+
 
 ```
 
@@ -651,11 +677,13 @@ $("td").css("border-width","1px");
 	
 	
 	```
-**EndOF Other specify for grid with multiple checkbox **
+	
+** EndOF Other specify for grid with multiple checkbox **
 
 
 
-##StartOf CheckBox pipe in
+## StartOf CheckBox pipe in
+
 ```
 
 <script type="text/javascript">
@@ -704,11 +732,13 @@ End Unverified %]
 
 
 ```
-**EndOF CheckBox pipe in**
+
+** EndOF CheckBox pipe in**
 
 
 
-##StartOf Grid resize
+## StartOf Grid resize
+
 ```
 <script>
 $( document ).ready(function() {
@@ -729,9 +759,11 @@ End Unverified %]
 </script>
 
 ```
-**EndOF Grid resize**
 
-##StartOf Subroutine
+** EndOF Grid resize**
+
+## StartOf Subroutine
+
 ```
 
 
@@ -784,9 +816,11 @@ ADD(ParentListName(),6)
 
 
 ```
-**EndOf Subroutine**
 
-##StartOf Alt Color Remove
+** EndOf Subroutine**
+
+## StartOf Alt Color Remove
+
 ```
 
 <script type="text/javascript">
@@ -803,4 +837,5 @@ if([% ListLength(A1RowList) %]<=3)
 </script>
 
 ```
-**EndOf Alt Color Remove**
+
+** EndOf Alt Color Remove**
