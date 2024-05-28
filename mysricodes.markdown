@@ -853,3 +853,18 @@ if([% ListLength(A1RowList) %]<=3)
 ```
 
 ** EndOf Alt Color Remove**
+
+## StartOf Adding empty space before Not Aware column
+
+```
+<script>
+	var b4val = [% ListLength(A2RowConst) %] ;
+		b4val++;
+		$('.grid_c8').addClass('cgrey');
+		
+		$('.A2_c8').before("<td  rowspan="+b4val+" class='space'>");
+		$('.space').css('width','2%');
+</script>
+
+```
+** StartOf Adding empty space before Not Aware column**
