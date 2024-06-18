@@ -639,7 +639,12 @@ if (count == 9 && flag) {
 
 ```
 
-       $('.inner_table tbody tr td:first').addClass('firsttdclass'); 
+       $('.inner_table tbody tr td:first').addClass('firsttdclass');
+
+$(".corner_label_cell").hide();
+$(".grid_header_cell").attr("colspan","5");
+$(".grid_header_cell").prev().attr("rowspan","2").html("<b><center>Sources</center></b>");
+$(".grid_header_cell").prev().addClass("alt_color1");
 		
 		
 ```
