@@ -971,4 +971,46 @@ $(".row_label_cell").children().css("margin-left","20px");
 </script>
 ```
 ** EndOf Block header insert code**
+## Start of Other Specify in grid with multiselect
+```
+$(".error_highlight").removeClass("error_highlight");
+$(".error_highlight_top").removeClass("error_highlight_top");
+$(".error_highlight_bottom").removeClass("error_highlight_bottom");
+$(".error_highlight_right").removeClass("error_highlight_right");
+$(".error_highlight_left").removeClass("error_highlight_left");
+$(".grid_r12").css("border-width","1px");
+$(".grid_r9").css("border-width","1px");
 
+if(SSI_GetValue("[% QuestionName() %]_r12_other")=="" && SSI_GetValue("[% QuestionName() %]_r12")>=1)
+{
+		strErrorMessage = "You forgot to answer this question.<br>If you select 'Other', then please specify your answer in the text box provided.";
+		$("#[% QuestionName() %]_r12_other").addClass("error_highlight");
+	
+}
+if(SSI_GetValue("[% QuestionName() %]_r12_other")!="" && SSI_GetValue("[% QuestionName() %]_r12")<1)
+{
+		strErrorMessage = "You forgot to answer this question.<br>Please select your response in the 'Other' row if you fill in the 'Other specify' box.";		
+		$(".grid_r12").addClass("error_highlight_top");
+		$(".grid_r12").addClass("error_highlight_bottom");
+		$(".grid_r12:first").addClass("error_highlight_left");
+		$(".grid_r12:last").addClass("error_highlight_right");
+		$(".grid_r12").css("border-width","2px");
+}
+
+if(SSI_GetValue("[% QuestionName() %]_r9_other")=="" && SSI_GetValue("[% QuestionName() %]_r9")>=1)
+{
+		strErrorMessage = "You forgot to answer this question.<br>If you select 'Other chemotherapy', then please specify your answer in the text box provided.";
+		$("#[% QuestionName() %]_r9_other").addClass("error_highlight");
+	
+}
+if(SSI_GetValue("[% QuestionName() %]_r9_other")!="" && SSI_GetValue("[% QuestionName() %]_r9")<1)
+{
+		strErrorMessage = "You forgot to answer this question.<br>Please select your response in the 'Other chemotherapy' row if you fill in the 'Other specify' box.";		
+		$(".grid_r9").addClass("error_highlight_top");
+		$(".grid_r9").addClass("error_highlight_bottom");
+		$(".grid_r9:first").addClass("error_highlight_left");
+		$(".grid_r9:last").addClass("error_highlight_right");
+		$(".grid_r9").css("border-width","2px");
+}
+```
+** EndOf Other Specify in grid with multiselect**
