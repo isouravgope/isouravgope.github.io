@@ -908,3 +908,67 @@ if([% ListLength(A1RowList) %]<=3)
 ```
 
 ** EndOf Switch case for numeric validation**
+
+## Block header insert code
+```
+<script type="text/javascript">
+//Highlight the don't know column
+$(".grid_c8").addClass("cgrey");
+/*Adjusting the Column width*/
+$(".grid_c1").css("width","14%");
+$(".grid_c2").css("width","5%");
+$(".grid_c3").css("width","5%");
+$(".grid_c4").css("width","5%");
+$(".grid_c5").css("width","5%");
+$(".grid_c6").css("width","5%");
+
+/*Inserting an extra column*/
+//$("tr.column_header_row:eq(1)>td:lt(8)").removeClass("alt_color1").addClass("alt_color2");
+
+
+var flow=true;
+var flow1=true,flow2=true,flow3=true,flow4=true,flow5=true;
+$(".inner_table > tbody:nth-child(1)>tr:gt(0)").each(function(){
+	a=$(this).attr("id");
+	rid=$(this).attr("id").split("_")[1].substr(1);
+	
+	
+	if(rid<=1 && rid<=1 && flow) 
+	{
+		$("#"+a).before("<tr><td colspan='3'><b>Birth Control Pills</b></td></tr>");
+		flow=false;
+	}
+	if(rid>1 && rid<=4 && flow1)
+	{
+		$("#"+a).before("<tr><td colspan='3' ><b>Birth Control Patch</b></td></tr>");
+		flow1=false;
+	}
+	if(rid>4 && rid<=6 && flow2)
+	{
+		$("#"+a).before("<tr><td colspan='3' ><b>Birth Control Ring</b></td></tr>");
+		flow2=false;
+	}
+	if(rid>6 && rid<=7 && flow3)
+	{
+		$("#"+a).before("<tr><td colspan='3' ><b>Birth Control Arm Implant</b></td></tr>");
+		flow3=false;
+	}
+	if(rid>7 && rid<=8 && flow4)
+	{
+		$("#"+a).before("<tr><td colspan='3' ><b>Birth Control Injection</b></td></tr>");
+		flow4=false;
+	}
+	if(rid>8 && rid<=15 && flow5)
+	{
+		$("#"+a).before("<tr><td colspan='3' ><b>Intrauterine Devices (IUD)</b></td></tr>");
+		flow5=false;
+	}
+	
+});
+
+/*Indent to the row labels*/
+$(".row_label_cell").children().css("margin-left","20px");
+</script>
+```
+** EndOf Block header insert code**
+
